@@ -3,29 +3,35 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <div className="bg-[url('/fujixsan-home-small.png')] bg-right bg-no-repeat h-screen w-screen sm:bg-[url('/fujixsan-home.JPEG')] sm:bg-cover">
-        <img src="/fujixsan-logo.png" alt="Fujixsan_Logo" className='w-48 h-48 sm:w-[500px] sm:h-[500px]' />
-        <div className='text-2xl sm:ml-3 sm:text-3xl'>
-          <ul className="sm:flex">
+      <div className="h-screen w-screen bg-[url('/fujixsan-home.JPEG')] bg-cover">
+        <Image src="/fujixsan-logo.png" alt="Fujixsan_Logo" width={500} height={500} />
+        <div className='text-3xl ml-3'>
+          <ul className="flex">
             <li className="mr-2">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Music</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Music</a>
             </li>
             <li className="mr-6">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Shows</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Shows</a>
             </li>
             <li className="mr-6">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Bio</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Bio</a>
             </li>
             <li className="mr-6">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Press Kit</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Press Kit</a>
             </li>
             <li className="mr-6">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Past Venues</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70" href="#">Past Venues</a>
             </li>
             <li className="mr-6">
-              <a className="bg-gray-600 bg-opacity-70 sm:bg-transparent sm:bg-opacity-1 text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-50" href="#">Merch</a>
+              <a className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-50" href="#">Merch</a>
             </li>
           </ul>
+        </div>
+
+        <div className='ml-5 mt-5 flex items-center'>
+          <Image src="/instagram.svg" alt="Instagram Icon" className='mr-6' width={20} height={20} />
+          <Image src="/tiktok.svg" alt="Tiktok Icon" className='mr-6' width={20} height={20} />
+          <Image src="/soundcloud.svg" alt="Sound Cloud Icon" className='mr-6' width={30} height={30} />
         </div>
       </div>
     </>
