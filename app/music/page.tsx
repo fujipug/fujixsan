@@ -1,7 +1,7 @@
 export default function Music() {
   return (
     <>
-      <div className="grid grid-cols-3 gap-x-4">
+      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-x-4">
         <div className="col-span-1">
           <iframe
             width="100%"

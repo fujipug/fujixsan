@@ -1,4 +1,4 @@
-export default function PressKit() {
+export default function Epk() {
   return (
     <>
       <div>TEST</div>

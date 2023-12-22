@@ -4,9 +4,8 @@ import { usePathname } from 'next/navigation'
 export default function Navbar() {
   const pathname = usePathname()
 
-  console.log(pathname);
   return (
-    <div className='text-3xl ml-3'>
+    <div className='text-2xl sm:text-3xl ml-3 overflow-x-auto'>
       <ul className="flex">
         {pathname !== '/' &&
           <>
@@ -28,14 +27,14 @@ export default function Navbar() {
           <Link href="/bio" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">Bio</Link>
         </li>
         <li className="mr-6">
-          <Link href="/press-kit" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">Press Kit</Link>
-        </li>
-        <li className="mr-6">
           <Link href="/venues" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">Venues</Link>
         </li>
         <li className="mr-6">
-          <Link href="/merch" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">Merch</Link>
+          <Link href="/epk" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">EPK</Link>
         </li>
+        {/* <li className="mr-6">
+          <Link href="/merch" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out hover:bg-opacity-70">Merch</Link>
+        </li> */}
       </ul>
     </div>
   )

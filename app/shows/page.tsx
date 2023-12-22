@@ -1,8 +1,7 @@
 export default function Shows() {
   return (
     <>
-      <button
-        type="button"
+      <div
         className="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400"
       >
         <svg
@@ -21,7 +20,7 @@ export default function Shows() {
         </svg>
 
         <span className="mt-2 block text-3xl font-semibold text-gray-300">No Upcoming Shows</span>
-      </button>
+      </div>
     </>
   )
 }

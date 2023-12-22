@@ -2,9 +2,9 @@ import Image from 'next/image'
 export default function Bio() {
   return (
     <>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 align-middle">
         <div className="col-span-1">
-          <Image src="/bio.jpeg" className="h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" alt="Fujixsan" width={450} height={450} />
+          <img src="/bio.jpeg" className="rounded-lg shadow-xl dark:shadow-gray-800" alt="Fujixsan" />
         </div>
         <div className="col-span-1">
           <h2 className='text-5xl font-bold'>Get to know Fujixsan</h2>
