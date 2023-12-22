@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Navbar from "../components/navbar"
 export default function RootLayout({
   children,
 }: {
@@ -6,10 +7,11 @@ export default function RootLayout({
 }) {
   return (
     <div>
-      <div className="css-selector flex justify-center align-middle">
+      <div className="css-selector flex justify-center align-middle h-72">
         <Image src="/shows_logo.png" alt="Shows_Logo" width={500} height={500} />
       </div>
-      {children}
+      <div className="flex justify-center mt-4"><Navbar /></div>
+      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 py-6">{children}</div>
     </div>
   )
 }

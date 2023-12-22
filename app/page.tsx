@@ -5,7 +5,17 @@ import Navbar from './components/navbar'
 export default function Home() {
   return (
     <>
-      <div className="hidden lg:block h-screen w-screen bg-[url('/fujixsan-home.JPEG')] bg-cover">
+      {/* <video
+        id="myVideo"
+        loop
+        autoPlay
+        muted
+      >
+        <source src="/Main_Glitch.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> */}
+
+      <div className="z-50 hidden lg:block h-screen w-screen bg-[url('/fujixsan-home.JPEG')] bg-cover">
         <Image src="/fujixsan-logo.png" alt="Fujixsan_Logo" width={500} height={500} />
         <Navbar />
 
@@ -29,22 +39,22 @@ export default function Home() {
         <Image src="/fujixsan-home.JPEG" alt="Fujixsan_Logo" layout='fill' objectFit='contain' className='-z-10' />
 
         {/* <div className="text-3xl flex w-full">
-          <Link href="/music" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Music</Link>
-          <Link href="/shows" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Shows</Link>
-          <Link href="/bio" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Bio</Link>
-          <Link href="/press-kit" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Press Kit</Link>
-          <Link href="/past-venues" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Venues</Link>
-          <Link href="/merch" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Merch</Link>
+          <Link href="/music" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Music</Link>
+          <Link href="/shows" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Shows</Link>
+          <Link href="/bio" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Bio</Link>
+          <Link href="/press-kit" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Press Kit</Link>
+          <Link href="/past-venues" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Venues</Link>
+          <Link href="/merch" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Merch</Link>
         </div> */}
 
         <div className="absolute bottom-0">
           <div className="grid grid-cols-3 gap-3 mt-44 text-2xl">
-            <Link href="/music" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Music</Link>
-            <Link href="/shows" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Shows</Link>
-            <Link href="/bio" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Bio</Link>
-            <Link href="/press-kit" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Press Kit</Link>
-            <Link href="/past-venues" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Venues</Link>
-            <Link href="/merch" className="text-gray-300 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Merch</Link>
+            <Link href="/music" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Music</Link>
+            <Link href="/shows" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Shows</Link>
+            <Link href="/bio" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Bio</Link>
+            <Link href="/press-kit" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Press Kit</Link>
+            <Link href="/past-venues" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Venues</Link>
+            <Link href="/merch" className="text-gray-100 px-2 hover:text-white hover:bg-gray-600 hover:bg-opacity-70">Merch</Link>
           </div>
         </div>
       </div>
