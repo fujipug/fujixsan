@@ -1,7 +1,5 @@
 'use client'
-import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf'
-import '../globals.css'
 
 export default function Epk() {
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js',
@@ -30,17 +28,21 @@ export default function Epk() {
 
       <div className='md:hidden block'>
         <Document
-          className='mb-4'
+          className='mb-4 flex justify-center'
           file='EPK.pdf'>
           <Page
-            width={window.innerWidth}
+            canvasBackground='transparent'
+            width={350}
             renderAnnotationLayer={false}
             renderTextLayer={false}
             pageNumber={1} />
         </Document>
-        <Document file='EPK.pdf'>
+        <Document
+          className='flex justify-center'
+          file='EPK.pdf'>
           <Page
-            width={window.innerWidth}
+            canvasBackground='transparent'
+            width={350}
             renderAnnotationLayer={false}
             renderTextLayer={false}
             pageNumber={2} />
