@@ -31,19 +31,14 @@ export default function Venues() {
               </div>
               <div>
                 <div className="-mt-px flex divide-x divide-gray-200">
-                  <div className="-ml-px flex w-0 flex-1">
-                    <a
-                      className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-lg font-semibold text-gray-900"
+                  {item.url ?
+                    <Link href={item.url} target='_blank' className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-lg font-semibold text-gray-900"
                     >
-                      {item.url ?
-                        <Link href={item.url} target='_blank'>
-                          <Image src="/instagram_purp.svg" alt="Instagram Icon" width={20} height={20} />
-                        </Link>
-                        :
-                        <p className='text-med'>Closed</p>
-                      }
-                    </a>
-                  </div>
+                      <Image src="/instagram_purp.svg" alt="Instagram Icon" width={20} height={20} />
+                    </Link>
+                    :
+                    <p className='text-med relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-lg font-semibold text-gray-900'>Closed</p>
+                  }
                 </div>
               </div>
             </li>

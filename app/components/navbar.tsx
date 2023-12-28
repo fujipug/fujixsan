@@ -5,7 +5,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <div className='text-2xl sm:text-3xl ml-3 overflow-x-auto'>
+    <div className='text-2xl sm:text-3xl ml-3 overflow-x-auto overflow-y-clip'>
       <ul className="flex">
         {pathname !== '/' &&
           <>

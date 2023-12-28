@@ -87,3 +87,7 @@ body {
   border-left: 2px solid white;
   height: 30px;
 }
+
+.react-pdf__Page__textContent textLayer {
+  background-color: transparent !important;
+}
