@@ -71,25 +71,25 @@ export default function Epk() {
                 <img className="h-44 w-auto" src="press_kit_logo.png" alt="" />
               </div>
               <figure>
-                <div className="grid-cols-2 space-x-6 flex justify-center">
-                  <div className="col-span-1">
-                    <button
-                      type="button"
-                      onClick={() => setOpenModal(true)}
-                      className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
-                    >
-                      View Press Kit
-                    </button>
-                  </div>
-                  <div className="col-span-1">
-                    <a
-                      href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=e383a3a6-e8ce-43c9-b35e-8f9331ab827e"
-                      type="button"
-                      className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
-                    >
-                      Download Press Kit (.zip)
-                    </a>
-                  </div>
+                <div className="space-x-6 flex justify-center">
+                  {/* <div className="col-span-1"> */}
+                  <button
+                    type="button"
+                    onClick={() => setOpenModal(true)}
+                    className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
+                  >
+                    View Press Kit
+                  </button>
+                  {/* </div> */}
+                  {/* <div className="col-span-1"> */}
+                  <a
+                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=e383a3a6-e8ce-43c9-b35e-8f9331ab827e"
+                    type="button"
+                    className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
+                  >
+                    Download Press Kit (.zip)
+                  </a>
+                  {/* </div> */}
                 </div>
               </figure>
             </div>
