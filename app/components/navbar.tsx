@@ -28,11 +28,13 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const onScroll = () => setOffset(window.scrollY);
-    // clean up code
-    window.removeEventListener('scroll', onScroll);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    if (window !== undefined) {
+      const onScroll = () => setOffset(window.scrollY);
+      // clean up code
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+    }
   }, []);
 
   let navbarClasses = 'fixed w-full z-10 drop-shadow-lg';
