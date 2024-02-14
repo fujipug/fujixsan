@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Navbar from "../components/navbar"
-import Socials from "../components/socials"
 export default function RootLayout({
   children,
 }: {
@@ -10,7 +9,6 @@ export default function RootLayout({
     <div>
       <div className="css-selector">
         <div className="flex justify-end pt-4 pr-2">
-          <Socials />
         </div>
         <div className="flex justify-center align-middle h-72">
           <Image src="/bio_logo.png" alt="Bio_Logo" width={500} height={500} />
