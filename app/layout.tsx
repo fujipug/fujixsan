@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={unicaOne.className}>
-        <Navbar />
-        <IsClientCtxProvider>
+    <IsClientCtxProvider>
+      <html lang="en">
+        <body className={unicaOne.className}>
+          <Navbar />
           {children}
-        </IsClientCtxProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </IsClientCtxProvider>
   )
 }
