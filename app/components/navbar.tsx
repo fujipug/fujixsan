@@ -30,14 +30,11 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (isClient) {
-      console.log('client')
-      const onScroll = () => setOffset(window.scrollY);
-      // clean up code
-      window.removeEventListener('scroll', onScroll);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      return () => window.removeEventListener('scroll', onScroll)
-    }
+    const onScroll = () => isClient && setOffset(window.scrollY);
+    // clean up code
+    isClient && window.removeEventListener('scroll', onScroll);
+    isClient && window.addEventListener('scroll', onScroll, { passive: true });
+    return () => { isClient && window.removeEventListener('scroll', onScroll) }
   }, [isClient]);
 
   let navbarClasses = 'fixed w-full z-10 drop-shadow-lg';
