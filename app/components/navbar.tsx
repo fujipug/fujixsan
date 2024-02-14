@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (window !== undefined) {
+    if (typeof window !== undefined) {
       const onScroll = () => setOffset(window.scrollY);
       // clean up code
       window.removeEventListener('scroll', onScroll);
