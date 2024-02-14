@@ -40,8 +40,8 @@ export default function Epk() {
           <div className="relative overflow-hidden bg-gray-900 px-6 py-20">
             <img
               className="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
-              src="epk_background.png"
-              alt=""
+              src="/epk_background.png"
+              alt="EPK Background Image"
             />
             <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
             <div className="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
