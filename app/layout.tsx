@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Unica_One } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/navbar'
+import { IsClientCtxProvider } from '@/utils/is-client-ctx'
 
 const unicaOne = Unica_One({ subsets: ['latin'], weight: '400' })
 
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={unicaOne.className}>
         <Navbar />
-        {children}
+        <IsClientCtxProvider>
+          {children}
+        </IsClientCtxProvider>
       </body>
     </html>
   )

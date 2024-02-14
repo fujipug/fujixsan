@@ -1,4 +1,5 @@
 'use client'
+import { useIsClient } from '@/utils/is-client-ctx'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
@@ -17,6 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [offset, setOffset] = useState(0);
+  const isClient = useIsClient();
 
   const scroll = (scrollId: string) => {
     const section = document.querySelector(`#${scrollId}`);
@@ -28,12 +30,15 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const onScroll = () => typeof window !== undefined && setOffset(window.scrollY);
-    // clean up code
-    typeof window !== undefined && window.removeEventListener('scroll', onScroll);
-    typeof window !== undefined && window.addEventListener('scroll', onScroll, { passive: true });
-    return () => { typeof window !== undefined && window.removeEventListener('scroll', onScroll) }
-  }, []);
+    if (isClient) {
+      console.log('client')
+      const onScroll = () => setOffset(window.scrollY);
+      // clean up code
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll)
+    }
+  }, [isClient]);
 
   let navbarClasses = 'fixed w-full z-10 drop-shadow-lg';
   let showLogo = ''

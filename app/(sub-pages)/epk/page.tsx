@@ -2,10 +2,12 @@
 import { Document, Page, pdfjs } from 'react-pdf'
 import Modal from "../../components/modal";
 import { useState } from 'react';
+import { useIsClient } from '@/utils/is-client-ctx';
 
 export default function Epk() {
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
   const [openModal, setOpenModal] = useState(false)
+  const isClient = useIsClient()
 
   return (
     <>
@@ -16,7 +18,7 @@ export default function Epk() {
             file='EPK.pdf'>
             <Page
               canvasBackground='transparent'
-              width={typeof window !== undefined ? (window.innerWidth / 2) : 0}
+              width={isClient ? (window.innerWidth / 2) : 0}
               renderAnnotationLayer={false}
               renderTextLayer={false}
               pageNumber={1} />
@@ -26,7 +28,7 @@ export default function Epk() {
             file='EPK.pdf'>
             <Page
               canvasBackground='transparent'
-              width={typeof window !== undefined ? (window.innerWidth / 2) : 0}
+              width={isClient ? (window.innerWidth / 2) : 0}
               renderAnnotationLayer={false}
               renderTextLayer={false}
               pageNumber={2} />
