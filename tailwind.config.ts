@@ -7,12 +7,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'fujixsan-home': "url('/img/fujixsan-home.JPEG')",
-      },
-    },
+    // colors: {
+    //   'karry': '#FFEBD2',
+    //   'atomic-tangerine': '#FFA364',
+    //   'crusta': '#FC7643',
+    //   'apple-blossom': '#AF4F41',
+    //   'pickled-bluewood': '#273248',
+    //   'blue-grey': '#475C7A',
+    // }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }
 export default config

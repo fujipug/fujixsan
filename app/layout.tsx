@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Swanky_and_Moo_Moo } from 'next/font/google'
+import { Unica_One } from 'next/font/google'
 import './globals.css'
+import Navbar from './components/navbar'
 
-const swanky = Swanky_and_Moo_Moo({ subsets: ['latin'], weight: '400' })
+const unicaOne = Unica_One({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'Fujixsan',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={swanky.className}>{children}</body>
+      <body className={unicaOne.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
