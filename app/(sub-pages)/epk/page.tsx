@@ -16,7 +16,7 @@ export default function Epk() {
             file='EPK.pdf'>
             <Page
               canvasBackground='transparent'
-              width={window.innerWidth / 2}
+              width={typeof window !== undefined ? (window.innerWidth / 2) : 0}
               renderAnnotationLayer={false}
               renderTextLayer={false}
               pageNumber={1} />
@@ -26,7 +26,7 @@ export default function Epk() {
             file='EPK.pdf'>
             <Page
               canvasBackground='transparent'
-              width={window.innerWidth / 2}
+              width={typeof window !== undefined ? (window.innerWidth / 2) : 0}
               renderAnnotationLayer={false}
               renderTextLayer={false}
               pageNumber={2} />
