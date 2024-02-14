@@ -21,8 +21,15 @@ export default function Navbar() {
   const isClient = useIsClient();
 
   const scroll = (scrollId: string) => {
-    const section = document.querySelector(`#${scrollId}`);
-    section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // const section = document.querySelector(`#${scrollId}`);
+    // section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    const yOffset = -64;
+    const element = document.getElementById(scrollId);
+    if (element && isClient) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
 
     navigation.forEach((item) => {
       item.scrollId !== scrollId ? item.current = false : item.current = true;
