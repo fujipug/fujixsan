@@ -2,7 +2,7 @@
 import { Document, Page, pdfjs } from 'react-pdf'
 import Modal from "../../components/modal";
 import { useState } from 'react';
-import { useIsClient } from '@/utils/is-client-ctx';
+import { useIsClient } from '@/store/is-client-context';
 
 export default function Epk() {
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
@@ -83,7 +83,7 @@ export default function Epk() {
                   {/* </div> */}
                   {/* <div className="col-span-1"> */}
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=e383a3a6-e8ce-43c9-b35e-8f9331ab827e"
+                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=1df9f530-ff29-4529-a859-4f9a841c3381"
                     type="button"
                     className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
                   >

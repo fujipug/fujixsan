@@ -1,5 +1,5 @@
 'use client'
-import { useIsClient } from '@/utils/is-client-ctx'
+import { useIsClient } from '@/store/is-client-context'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
@@ -21,13 +21,10 @@ export default function Navbar() {
   const isClient = useIsClient();
 
   const scroll = (scrollId: string) => {
-    // const section = document.querySelector(`#${scrollId}`);
-    // section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
     const yOffset = -64;
     const element = document.getElementById(scrollId);
     if (element && isClient) {
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
 

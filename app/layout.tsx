@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Unica_One } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/navbar'
-import { IsClientCtxProvider } from '@/utils/is-client-ctx'
+import { IsClientCtxProvider } from '@/store/is-client-context'
 
 const unicaOne = Unica_One({ subsets: ['latin'], weight: '400' })
 

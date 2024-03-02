@@ -10,6 +10,8 @@ export default function Venues() {
     { id: 6, name: 'Flow', location: 'Texcoco', imageUrl: 'flow.jpeg', url: 'https://www.instagram.com/flow_clubmx/' },
     { id: 7, name: 'Mushroom', location: 'Texcoco', imageUrl: 'mushroom.jpeg', url: 'https://www.instagram.com/mushroom_diveclub/' },
     { id: 8, name: 'Party and Art', location: 'Texcoco', imageUrl: 'partyandart.jpeg', url: 'https://www.instagram.com/partyandartclub/' },
+    { id: 9, name: 'Disco Dopamine', location: 'Mexico City', imageUrl: 'disco-dopamine.jpeg', url: 'https://www.instagram.com/discodopamine.mx/' },
+    { id: 10, name: 'Bartola', location: 'Mexico City', imageUrl: 'bartola.jpeg', url: 'https://www.instagram.com/bartola_steakandgrill/' },
   ]
 
   return (
