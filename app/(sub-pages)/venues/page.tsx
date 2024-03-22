@@ -12,6 +12,7 @@ export default function Venues() {
     { id: 8, name: 'Party and Art', location: 'Texcoco', imageUrl: 'partyandart.jpeg', url: 'https://www.instagram.com/partyandartclub/' },
     { id: 9, name: 'Disco Dopamine', location: 'Mexico City', imageUrl: 'disco-dopamine.jpeg', url: 'https://www.instagram.com/discodopamine.mx/' },
     { id: 10, name: 'Bartola', location: 'Mexico City', imageUrl: 'bartola.jpeg', url: 'https://www.instagram.com/bartola_steakandgrill/' },
+    { id: 10, name: 'Club Monroe', location: 'Mexico City', imageUrl: 'monroe.jpeg', url: 'https://www.instagram.com/club.antrosur/' },
   ]
 
   return (

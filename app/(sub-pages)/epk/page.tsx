@@ -83,7 +83,7 @@ export default function Epk() {
                   {/* </div> */}
                   {/* <div className="col-span-1"> */}
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=1df9f530-ff29-4529-a859-4f9a841c3381"
+                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=21d792fd-5418-45f9-8a9c-86c9a429f662"
                     type="button"
                     className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
                   >
