@@ -24,7 +24,7 @@ export default function Epk() {
               pageNumber={1} />
           </Document>
           <Document
-            className='flex justify-center'
+            className='mb-4 flex justify-center'
             file='EPK.pdf'>
             <Page
               canvasBackground='transparent'
@@ -32,6 +32,16 @@ export default function Epk() {
               renderAnnotationLayer={false}
               renderTextLayer={false}
               pageNumber={2} />
+          </Document>
+          <Document
+            className='flex justify-center'
+            file='EPK.pdf'>
+            <Page
+              canvasBackground='transparent'
+              width={isClient ? (window.innerWidth / 2) : 0}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+              pageNumber={3} />
           </Document>
         </div>
       </Modal>
@@ -83,7 +93,7 @@ export default function Epk() {
                   {/* </div> */}
                   {/* <div className="col-span-1"> */}
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=21d792fd-5418-45f9-8a9c-86c9a429f662"
+                    href="https://firebasestorage.googleapis.com/v0/b/lanefujikado-d3727.appspot.com/o/Press%20Kit%20Fujixsan.zip?alt=media&token=ba75a709-8e3b-48c5-a82f-c777a41f7cc0"
                     type="button"
                     className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 transition ease-in-out duration-500 hover:bg-gray-50 hover:text-gray-900"
                   >

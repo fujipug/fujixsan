@@ -13,6 +13,11 @@ export default function Venues() {
     { id: 9, name: 'Disco Dopamine', location: 'Mexico City', imageUrl: 'disco-dopamine.jpeg', url: 'https://www.instagram.com/discodopamine.mx/' },
     { id: 10, name: 'Bartola', location: 'Mexico City', imageUrl: 'bartola.jpeg', url: 'https://www.instagram.com/bartola_steakandgrill/' },
     { id: 10, name: 'Club Monroe', location: 'Mexico City', imageUrl: 'monroe.jpeg', url: 'https://www.instagram.com/club.antrosur/' },
+    { id: 11, name: 'Sin Events', location: 'Mexico City', imageUrl: 'sin.jpg', url: 'https://www.instagram.com/sin.cdmx/' },
+    { id: 12, name: 'Departamento', location: 'Mexico City', imageUrl: 'departamento.jpg', url: 'https://www.instagram.com/departamento_studiobar/' },
+    { id: 13, name: 'Club Maria Sabina', location: 'Mexico City', imageUrl: 'sabina.jpg', url: 'https://www.instagram.com/clubmariasabina/' },
+    { id: 13, name: 'La Xampa', location: 'Mexico City', imageUrl: 'laxampa.jpg', url: 'https://www.instagram.com/la_xampa/' },
+    { id: 13, name: 'Florida', location: 'Mexico City', imageUrl: 'florida.jpg', url: 'https://www.instagram.com/florida.nightclub/' },
   ]
 
   return (
